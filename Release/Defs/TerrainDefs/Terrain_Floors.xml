@@ -1,0 +1,23 @@
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>ArmoredFloor</defName>
+    <label>armored floor</label>
+    <description>Thick armor plating. Excelent at keeping bugs out of overhead mountain tiles and netural in terms of looks, but very slow to build.</description>
+    <texturePath>ArmoredFloors/Terrain/Surfaces/ArmoredFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>230</renderPrecedence>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Plasteel>4</Plasteel>
+      <Plasteel>2</Plasteel>
+    </costList>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    <tags>
+        <li>InfestationBlocker</li>
+    </tags>
+  </TerrainDef>
+</Defs>
