@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <ProjectGuid>{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}</ProjectGuid>
+        <Configuration>Release</Configuration>
+        <Platform>AnyCPU</Platform>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>ArmoredFloors</RootNamespace>
+        <AssemblyName>ArmoredFloors</AssemblyName>
+        <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <Optimize>true</Optimize>
+        <OutputPath>ArmoredFloors\Assemblies\</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <ReleaseFiles Include="ArmoredFloors\**" Exclude="ArmoredFloors\Assemblies\**"/>
+
+        <!-- RimWorld references -->
+        <Reference Include="Assembly-CSharp" HintPath="..\_RimWorldData\Managed\Assembly-CSharp.dll" Private="False"/>
+        <Reference Include="ISharpZipLib" HintPath="..\_RimWorldData\Managed\ISharpZipLib.dll" Private="False" />
+        <Reference Include="Unity.TextMeshPro" HintPath="..\_RimWorldData\Managed\Unity.TextMeshPro.dll" Private="False" />
+        <Reference Include="UnityEngine.AIModule" HintPath="..\_RimWorldData\Managed\UnityEngine.AIModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ARModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ARModule.dll" Private="False" />
+        <Reference Include="UnityEngine.AccessibilityModule" HintPath="..\_RimWorldData\Managed\UnityEngine.AccessibilityModule.dll" Private="False" />
+        <Reference Include="UnityEngine.AndroidJNIModule" HintPath="..\_RimWorldData\Managed\UnityEngine.AndroidJNIModule.dll" Private="False" />
+        <Reference Include="UnityEngine.AnimationModule" HintPath="..\_RimWorldData\Managed\UnityEngine.AnimationModule.dll" Private="False" />
+        <Reference Include="UnityEngine.AssetBundleModule" HintPath="..\_RimWorldData\Managed\UnityEngine.AssetBundleModule.dll" Private="False" />
+        <Reference Include="UnityEngine.AudioModule" HintPath="..\_RimWorldData\Managed\UnityEngine.AudioModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ClothModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ClothModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ClusterInputModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ClusterInputModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ClusterRendererModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ClusterRendererModule.dll" Private="False" />
+        <Reference Include="UnityEngine.CoreModule" HintPath="..\_RimWorldData\Managed\UnityEngine.CoreModule.dll" Private="False" />
+        <Reference Include="UnityEngine.CrashReportingModule" HintPath="..\_RimWorldData\Managed\UnityEngine.CrashReportingModule.dll" Private="False" />
+        <Reference Include="UnityEngine.DSPGraphModule" HintPath="..\_RimWorldData\Managed\UnityEngine.DSPGraphModule.dll" Private="False" />
+        <Reference Include="UnityEngine.DirectorModule" HintPath="..\_RimWorldData\Managed\UnityEngine.DirectorModule.dll" Private="False" />
+        <Reference Include="UnityEngine.FileSystemHttpModule" HintPath="..\_RimWorldData\Managed\UnityEngine.FileSystemHttpModule.dll" Private="False" />
+        <Reference Include="UnityEngine.GameCenterModule" HintPath="..\_RimWorldData\Managed\UnityEngine.GameCenterModule.dll" Private="False" />
+        <Reference Include="UnityEngine.GridModule" HintPath="..\_RimWorldData\Managed\UnityEngine.GridModule.dll" Private="False" />
+        <Reference Include="UnityEngine.HotReloadModule" HintPath="..\_RimWorldData\Managed\UnityEngine.HotReloadModule.dll" Private="False" />
+        <Reference Include="UnityEngine.IMGUIModule" HintPath="..\_RimWorldData\Managed\UnityEngine.IMGUIModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ImageConversionModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ImageConversionModule.dll" Private="False" />
+        <Reference Include="UnityEngine.InputLegacyModule" HintPath="..\_RimWorldData\Managed\UnityEngine.InputLegacyModule.dll" Private="False" />
+        <Reference Include="UnityEngine.InputModule" HintPath="..\_RimWorldData\Managed\UnityEngine.InputModule.dll" Private="False" />
+        <Reference Include="UnityEngine.JSONSerializeModule" HintPath="..\_RimWorldData\Managed\UnityEngine.JSONSerializeModule.dll" Private="False" />
+        <Reference Include="UnityEngine.LocalizationModule" HintPath="..\_RimWorldData\Managed\UnityEngine.LocalizationModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ParticleSystemModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ParticleSystemModule.dll" Private="False" />
+        <Reference Include="UnityEngine.PerformanceReportingModule" HintPath="..\_RimWorldData\Managed\UnityEngine.PerformanceReportingModule.dll" Private="False" />
+        <Reference Include="UnityEngine.Physics2DModule" HintPath="..\_RimWorldData\Managed\UnityEngine.Physics2DModule.dll" Private="False" />
+        <Reference Include="UnityEngine.PhysicsModule" HintPath="..\_RimWorldData\Managed\UnityEngine.PhysicsModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ProfilerModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ProfilerModule.dll" Private="False" />
+        <Reference Include="UnityEngine.ScreenCaptureModule" HintPath="..\_RimWorldData\Managed\UnityEngine.ScreenCaptureModule.dll" Private="False" />
+        <Reference Include="UnityEngine.SharedInternalsModule" HintPath="..\_RimWorldData\Managed\UnityEngine.SharedInternalsModule.dll" Private="False" />
+        <Reference Include="UnityEngine.SpriteMaskModule" HintPath="..\_RimWorldData\Managed\UnityEngine.SpriteMaskModule.dll" Private="False" />
+        <Reference Include="UnityEngine.SpriteShapeModule" HintPath="..\_RimWorldData\Managed\UnityEngine.SpriteShapeModule.dll" Private="False" />
+        <Reference Include="UnityEngine.StreamingModule" HintPath="..\_RimWorldData\Managed\UnityEngine.StreamingModule.dll" Private="False" />
+        <Reference Include="UnityEngine.SubstanceModule" HintPath="..\_RimWorldData\Managed\UnityEngine.SubstanceModule.dll" Private="False" />
+        <Reference Include="UnityEngine.TLSModule" HintPath="..\_RimWorldData\Managed\UnityEngine.TLSModule.dll" Private="False" />
+        <Reference Include="UnityEngine.TerrainModule" HintPath="..\_RimWorldData\Managed\UnityEngine.TerrainModule.dll" Private="False" />
+        <Reference Include="UnityEngine.TerrainPhysicsModule" HintPath="..\_RimWorldData\Managed\UnityEngine.TerrainPhysicsModule.dll" Private="False" />
+        <Reference Include="UnityEngine.TextCoreModule" HintPath="..\_RimWorldData\Managed\UnityEngine.TextCoreModule.dll" Private="False" />
+        <Reference Include="UnityEngine.TextRenderingModule" HintPath="..\_RimWorldData\Managed\UnityEngine.TextRenderingModule.dll" Private="False" />
+        <Reference Include="UnityEngine.TilemapModule" HintPath="..\_RimWorldData\Managed\UnityEngine.TilemapModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UI" HintPath="..\_RimWorldData\Managed\UnityEngine.UI.dll" Private="False" />
+        <Reference Include="UnityEngine.UIElementsModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UIElementsModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UIModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UIModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UNETModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UNETModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UmbraModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UmbraModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityAnalyticsModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityAnalyticsModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityConnectModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityConnectModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityTestProtocolModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityTestProtocolModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityWebRequestAudioModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityWebRequestAudioModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityWebRequestModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityWebRequestModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityWebRequestTextureModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityWebRequestTextureModule.dll" Private="False" />
+        <Reference Include="UnityEngine.UnityWebRequestWWWModule" HintPath="..\_RimWorldData\Managed\UnityEngine.UnityWebRequestWWWModule.dll" Private="False" />
+        <Reference Include="UnityEngine.VFXModule" HintPath="..\_RimWorldData\Managed\UnityEngine.VFXModule.dll" Private="False" />
+        <Reference Include="UnityEngine.VRModule" HintPath="..\_RimWorldData\Managed\UnityEngine.VRModule.dll" Private="False" />
+        <Reference Include="UnityEngine.VehiclesModule" HintPath="..\_RimWorldData\Managed\UnityEngine.VehiclesModule.dll" Private="False" />
+        <Reference Include="UnityEngine.VideoModule" HintPath="..\_RimWorldData\Managed\UnityEngine.VideoModule.dll" Private="False" />
+        <Reference Include="UnityEngine.WindModule" HintPath="..\_RimWorldData\Managed\UnityEngine.WindModule.dll" Private="False" />
+        <Reference Include="UnityEngine.XRModule" HintPath="..\_RimWorldData\Managed\UnityEngine.XRModule.dll" Private="False" />
+        <Reference Include="UnityEngine" HintPath="..\_RimWorldData\Managed\UnityEngine.dll" Private="False" />
+        <!-- end RimWorld references -->
+        <Reference Include="0Harmony" HintPath="ThirdParty\0Harmony.dll" Private="False" />
+
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Data.DataSetExtensions" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Source\**\*.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

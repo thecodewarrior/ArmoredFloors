@@ -10,7 +10,7 @@
       <WorkToBuild>1600</WorkToBuild>
     </statBases>
     <costList>
-      <Plasteel>4</Plasteel>
+      <Steel>4</Steel>
       <Plasteel>2</Plasteel>
     </costList>
     <researchPrerequisites>
