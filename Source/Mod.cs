@@ -7,7 +7,7 @@ namespace ArmoredFloors
     {
         public Mod(ModContentPack content) : base(content)
         {
-            new Harmony("the_codewarrior.rimworld.ArmoredFloors.main").PatchAll(); 
+            new Harmony("the_codewarrior.rimworld.ArmoredFloors.main").PatchAll();
         }
     }
 }
