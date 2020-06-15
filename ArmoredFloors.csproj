@@ -10,6 +10,7 @@
         <RootNamespace>ArmoredFloors</RootNamespace>
         <AssemblyName>ArmoredFloors</AssemblyName>
         <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+        <TargetFrameworks>net46</TargetFrameworks>
         <FileAlignment>512</FileAlignment>
         <Optimize>true</Optimize>
         <OutputPath>ArmoredFloors\Assemblies\</OutputPath>

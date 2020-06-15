@@ -7,7 +7,7 @@
     </supportedVersions>
     <packageId>thecodewarrior.ArmoredFloors</packageId>
     <description>Armor plating for your floors to keep those beastly burrowing bugs out of your base. Turns out all it takes is two inches of steel-plasteel composite to keep the pesky critters out!\n\nBuild armored floors on any tile with overhead mountain to avoid infestations. Note that the flooring only prevents the *event* from spawning in a given tile. Bug nests can still appear on armored tiles if an infestation spawns on a nearby unarmored tile (the infestation event can occur on the unarmored tile then spawns nests in a radius around that tile).</description>
-    <url>https://steamcommunity.com/sharedfiles/filedetails/?id=2011863224</url>
+    <url>https://steamcommunity.com/id/the_codewarrior/myworkshopfiles/?appid=294100</url>
     <modDependencies>
         <li>
             <packageId>brrainz.harmony</packageId>
@@ -16,4 +16,10 @@
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
     </modDependencies>
+    <loadAfter>
+		<li>wofl.MoreFurnitureUpdated</li>
+		<li>dianawinters.Orassans</li>
+		<li>dianawinters.OrassansLite</li>
+		<li>BiomesTeam.BiomesIslands</li>
+  	</loadAfter>
 </ModMetaData>
