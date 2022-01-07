@@ -9,7 +9,7 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>ArmoredFloors</RootNamespace>
         <AssemblyName>ArmoredFloors</AssemblyName>
-        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
         <TargetFrameworks>net472</TargetFrameworks>
         <FileAlignment>512</FileAlignment>
         <Optimize>true</Optimize>
@@ -20,10 +20,6 @@
     </PropertyGroup>
     <ItemGroup>
         <ReleaseFiles Include="ArmoredFloors\**" Exclude="ArmoredFloors\Assemblies\**" />
-        <Reference Include="0Harmony">
-          <HintPath>packages\Lib.Harmony.2.2.0\lib\net472\0Harmony.dll</HintPath>
-          <CopyLocal>False</CopyLocal>
-        </Reference>
 
         <!-- RimWorld references -->
         <Reference Include="Assembly-CSharp">
@@ -143,6 +139,13 @@
             <HintPath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\')">C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.DirectorModule.dll</HintPath> <!-- Windows Steam install path -->
             <HintPath Condition="Exists('$(HOME)/.steam/steam/SteamApps/common/RimWorld/RimWorldLinux_Data/Managed/')">$(HOME)/.steam/steam/SteamApps/common/RimWorld/RimWorldLinux_Data/Managed/UnityEngine.DirectorModule.dll</HintPath> <!-- Linux Steam install path -->
             <HintPath Condition="Exists('$(HOME)/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Contents/Resources/Data/Managed/')">$(HOME)/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Contents/Resources/Data/Managed/UnityEngine.DirectorModule.dll</HintPath> <!-- macOS Steam install path -->
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.FileSystemHttpModule">
+            <HintPath Condition="Exists('../_RimWorldData/Managed/')">../_RimWorldData/Managed/UnityEngine.FileSystemHttpModule.dll</HintPath> <!-- Custom directory -->
+            <HintPath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\')">C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.FileSystemHttpModule.dll</HintPath> <!-- Windows Steam install path -->
+            <HintPath Condition="Exists('$(HOME)/.steam/steam/SteamApps/common/RimWorld/RimWorldLinux_Data/Managed/')">$(HOME)/.steam/steam/SteamApps/common/RimWorld/RimWorldLinux_Data/Managed/UnityEngine.FileSystemHttpModule.dll</HintPath> <!-- Linux Steam install path -->
+            <HintPath Condition="Exists('$(HOME)/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Contents/Resources/Data/Managed/')">$(HOME)/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Contents/Resources/Data/Managed/UnityEngine.FileSystemHttpModule.dll</HintPath> <!-- macOS Steam install path -->
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.GameCenterModule">
@@ -468,6 +471,7 @@
             <Private>False</Private>
         </Reference>
         <!-- end RimWorld references -->
+        <Reference Include="0Harmony" HintPath="ThirdParty\0Harmony.dll" Private="False" />
 
         <Reference Include="System" />
         <Reference Include="System.Core" />
@@ -479,9 +483,6 @@
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Source\**\*.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
